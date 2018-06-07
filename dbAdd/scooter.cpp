@@ -1,20 +1,12 @@
 #include "scooter.h"
-#include <QDebug>
 
-Scooter::Scooter(QString b, QString m, QString c, int y,int r) : Vechile(b,m,c,y)
+Scooter::Scooter(QString brnd, QString mdl, QString clr, QDate yr, int rng) : Vehicle(brnd,mdl,clr,yr)
 {
-    range = r;
+    range = rng;
 }
 
-QString Scooter::dbAdd1()
+QString Scooter::createDetailsQuery(int id)
 {
-
-  //  std::cout << "GAY"<<endl;
-    return "Yeah";
-
-}
-QString Scooter::dbAdd2(int id)
-{
-    return "x";
+    return "INSERT INTO scooter (range,vid) VALUES ('" + QString::number(range) + "','"+QString::number(id)+"')";
 }
 

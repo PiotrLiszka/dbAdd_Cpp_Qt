@@ -1,16 +1,15 @@
 #ifndef BIKE_H
 #define BIKE_H
-#include <QDebug>
-#include "vechile.h"
 
-class Bike : public Vechile
+#include "vehicle.h"
+
+class Bike : public Vehicle
 {
 protected:
     QString type;
 public:
-    Bike(QString b, QString m, QString c, int y,QString t);
-    QString dbAdd1();
-    QString dbAdd2(int id);
+    Bike(QString brnd, QString mdl, QString clr,QDate yr,QString tp);
+    QString createDetailsQuery(int id);
 
 };
 

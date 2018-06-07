@@ -1,20 +1,13 @@
 #include "bike.h"
-#include <QDebug>
 
-Bike::Bike(QString b, QString m, QString c, int y, QString t)  : Vechile(b,m,c,y)
+Bike::Bike(QString brnd, QString mdl, QString clr, QDate yr, QString tp)  : Vehicle(brnd,mdl,clr,yr)
 {
-    type = t;
+    type = tp;
 }
 
-QString Bike::dbAdd1()
-{
-    qDebug() << brand << model<<color<< year << type;
-    return "INSERT INTO vechile (brand, model, prodYear, color) VALUES ('"+brand+"','"+model+"','" +QString::number(year)+  "','" + color +"')";
 
-}
 
-QString Bike::dbAdd2(int id)
+QString Bike::createDetailsQuery(int id)
 {
-    qDebug() << id;
     return "INSERT INTO bike (type,vid) VALUES ('" + type + "','"+QString::number(id)+"')";
 }

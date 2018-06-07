@@ -5,10 +5,15 @@
 #include <QtSql>
 #include <QDebug>
 #include <QFileInfo>
+#include <QDate>
+#include <string>
+
 #include "bike.h"
-#include "vechile.h"
+#include "vehicle.h"
 #include "scooter.h"
-#include <ctime>
+#include "car.h"
+#include "truck.h"
+#include "errordialog.h"
 
 
 namespace Ui {
@@ -25,6 +30,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+
+
+    void showErrorDialog();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -39,8 +48,11 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QSqlDatabase mydb;
-    void add (Vechile *v);
-    Vechile *vech;
+    void addToDb (IVehicle *v);
+    bool dbExists(QString path);
+    void createTables();
+    void databaseConnection();
+    bool dataValidation(const std::string data, int &result);
 };
 
 #endif // MAINWINDOW_H

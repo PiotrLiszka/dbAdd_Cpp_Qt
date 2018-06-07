@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>329</width>
-    <height>419</height>
+    <width>385</width>
+    <height>431</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -72,28 +72,18 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="3">
-       <widget class="QLineEdit" name="maxText"/>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="colorText"/>
       </item>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="QLabel" name="label_4">
         <property name="text">
          <string>Color</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="colorText"/>
-      </item>
-      <item row="1" column="3">
-       <widget class="QLineEdit" name="doorsText"/>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLabel" name="label_8">
-        <property name="text">
-         <string>Max</string>
-        </property>
-       </widget>
+      <item row="3" column="3">
+       <widget class="QLineEdit" name="capacityText"/>
       </item>
       <item row="0" column="3">
        <widget class="QLineEdit" name="engText"/>
@@ -101,12 +91,8 @@
       <item row="0" column="1">
        <widget class="QLineEdit" name="modelText"/>
       </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Model</string>
-        </property>
-       </widget>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="typeText"/>
       </item>
       <item row="0" column="2">
        <widget class="QLabel" name="label_6">
@@ -115,23 +101,20 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="2">
-       <widget class="QLabel" name="label_9">
+      <item row="5" column="3">
+       <widget class="QLineEdit" name="rangeText"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Range (km)</string>
+         <string>Model</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="3">
-       <widget class="QLineEdit" name="rangeText"/>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="typeText"/>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_5">
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_9">
         <property name="text">
-         <string>Type</string>
+         <string>Range (km)</string>
         </property>
        </widget>
       </item>
@@ -144,6 +127,23 @@
          <string>No. of doors</string>
         </property>
        </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Max capacity (kg)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QComboBox" name="doorsCombo"/>
       </item>
      </layout>
     </item>
@@ -172,8 +172,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>329</width>
-     <height>21</height>
+     <width>385</width>
+     <height>20</height>
     </rect>
    </property>
   </widget>
@@ -188,6 +188,23 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>carRadio</tabstop>
+  <tabstop>truckRadio</tabstop>
+  <tabstop>bikeRadio</tabstop>
+  <tabstop>scooterRadio</tabstop>
+  <tabstop>brandText</tabstop>
+  <tabstop>modelText</tabstop>
+  <tabstop>yearCombo</tabstop>
+  <tabstop>colorText</tabstop>
+  <tabstop>typeText</tabstop>
+  <tabstop>engText</tabstop>
+  <tabstop>doorsCombo</tabstop>
+  <tabstop>capacityText</tabstop>
+  <tabstop>rangeText</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -197,8 +214,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>194</x>
-     <y>345</y>
+     <x>374</x>
+     <y>376</y>
     </hint>
     <hint type="destinationlabel">
      <x>273</x>

@@ -1,15 +1,16 @@
 #ifndef SCOOTER_H
 #define SCOOTER_H
-#include "vechile.h"
 
-class Scooter : public Vechile
+#include "vehicle.h"
+
+class Scooter : public Vehicle
 {
 protected:
     int range;
 public:
-    Scooter(QString b, QString m, QString c, int y,int r);
-    QString dbAdd1();
-    QString dbAdd2(int id);
+    Scooter(QString brnd, QString mdl, QString clr,QDate yr,int rng);
+//    QString dbAdd1();
+    QString createDetailsQuery(int id);
 };
 
 #endif // SCOOTER_H

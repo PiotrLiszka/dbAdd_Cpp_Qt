@@ -27,15 +27,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    vechile.cpp \
     bike.cpp \
-    scooter.cpp
+    scooter.cpp \
+    vehicle.cpp \
+    car.cpp \
+    truck.cpp \
+    errordialog.cpp
 
 HEADERS += \
         mainwindow.h \
-    vechile.h \
     bike.h \
-    scooter.h
+    scooter.h \
+    ivehicle.h \
+    vehicle.h \
+    car.h \
+    truck.h \
+    errordialog.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    errordialog.ui
