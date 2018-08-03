@@ -11,6 +11,7 @@ protected:
     QString model;
     QString color;
     QDate year;
+
 public:
     QString createBaseQuery();
     virtual QString createDetailsQuery(int id) = 0;

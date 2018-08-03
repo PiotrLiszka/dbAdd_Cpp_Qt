@@ -5,6 +5,8 @@ QString model;
 QString color;
 QDate year;
 
+
+
 Vehicle::Vehicle(QString brnd, QString mdl, QString clr, QDate yr) : brand(brnd), model(mdl), color(clr), year(yr)
 {
 

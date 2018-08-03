@@ -15,7 +15,7 @@ void MainWindow::createTables()
                  "(vid INTEGER PRIMARY KEY AUTOINCREMENT, "
                  "brand STRING,"
                  "model STRING,"
-                 "prodYear DATE,"
+                 "prodYear DATE FORMAT 'YYYY',"
                  "color STRING NOT NULL)");
         }
         if(!mydb.tables().contains(QLatin1String("scooter")))
